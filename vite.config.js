@@ -3,6 +3,7 @@ import wasm from 'vite-plugin-wasm';
 import topLevelAwait from 'vite-plugin-top-level-await';
 
 export default defineConfig({
+  base: './', // Set base path for relative asset loading
   plugins: [
     wasm(),
     topLevelAwait()
